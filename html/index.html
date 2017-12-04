@@ -4,22 +4,27 @@
 		<link rel="stylesheet" href="bootstrap.css">
 	</head>
 	<body>
-		<div id="banners"></div>
 		<div id="main_menu" class="well">
 			<div><img class="pull-left" src="logo.png"/></div>
 			<div class="pull-right">
 				<ul class="nav nav-pills" id="menu_ul">
-  					<li  class="active" id="mpb"><a id="main_page_but">На главную</a></li>
+  					<li  class="active" id="mpb"><label id="main_page_but">На главную</label></li>
+            <li  id="ccb"><label id="category_catalog_but">Каталог по категориям</label></li>
+            <li  id="pcb"><label id="producer_catalog_but">Каталог поставщиков</label></li>
+            <li  id="mcb"><label id="manufacturer_catalog_but">Каталог производителей</label></li>
   					<li  id="rpb"><label id="reg_page_but">Регистрация</label></li>
   					<li id="lpb"><label id="login_page_but">Вход</label></li>
 				</ul>
 			</div>
 			<div style="clear:both;"></div>
 		</div>
+    <!--<div id="banners"></div>-->
 		<div id="content">
 			<div id="search">
 				  <form>
-   					<p><input class="input-xlarge" type="search" id="search_word" placeholder="Поиск ..."> 
+   					<p class="text-info">
+            <strong>Каталог оборудования:</strong>
+            <input class="input-xlarge" type="search" id="search_word" placeholder="Поиск решения..."> 
    					<input type="submit" value="&#128270"></p>
   				</form>
 			</div>
@@ -68,6 +73,9 @@
   					</div>
 				</form>
 			</div>
+      <div id="catalog_div" class="hide_div">
+        <P class="text-error"><strong>СТРАНИЦА В РАЗРАБОТКЕ</strong><p>
+      </div>
 		</div>
 		<div id="footer">
 			<div class="pull-right">
